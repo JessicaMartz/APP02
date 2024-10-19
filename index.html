@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de Hoteles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hotel-search">
+    <h1>Consulta de Hoteles</h1>
+    <div>
+      <label for="cityInput">Selecciona una ciudad:</label>
+      <select id="cityInput">
+        <option value="">-- Elige una ciudad --</option>
+        <option value="madrid">Madrid</option>
+        <option value="barcelona">Barcelona</option>
+        <option value="seville">Sevilla</option>
+      </select>
+      <button onclick="searchHotels()">Buscar Hoteles</button>
+    </div>
+
+    <div id="hotelList" class="hotel-list">
+      <h2>Hoteles disponibles:</h2>
+      <ul id="hotels"></ul>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
